@@ -1,34 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
---bleu:#0065FC
---darkgrey:#a9a9a9
---lightgrey:#F2F2F2
---lightblue :#DEEBFF
-
+    --bleu: #0065FC --darkgrey:#a9a9a9 --lightgrey:#F2F2F2 --lightblue:#DEEBFF
 }
 
 
 /*wildcart */
 * {
     box-sizing: border-box;
-    font-family: "Raleway","sans-serif";
+    font-family: "Raleway", "sans-serif";
 }
 
 body {
     margin-left: 20px;
-    }
+}
 
-a{
+a {
     color: inherit;
     text-decoration: none;
 }
 
 /* navbar */
 nav {
- display: flex;
- align-items: center;
- justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 nav a {
@@ -37,7 +33,7 @@ nav a {
 }
 
 nav a:hover {
-    border-top:3px solid #0065fc;
+    border-top: 3px solid #0065fc;
 }
 
 #logo {
@@ -49,56 +45,66 @@ nav a:hover {
 .sub-nav {
     display: inline-block;
 }
-    .sub-nav {
-        order: 1;
-        flex-basis: 100%;
-        text-align: center;
-    }
 
-    .sub-nav a {
-        flex-basis: 50%;
-    };
+.sub-nav {
+    order: 1;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.sub-nav a {
+    flex-basis: 50%;
+}
+
+;
 
 .sub-nav a:hover {
     border-top: 3px solid transparent;
-    color:#0065fc
-};
+    color: #0065fc
+}
+
+;
 
 /*search-form */
 .search-form {
     display: flex;
     font-size: 1.2rem;
 }
-.search-form >*{
+
+.search-form>* {
     padding: 1rem 1.5rem;
 }
-.search-form i{
+
+.search-form i {
     background-color: lightgrey;
     border-radius: 1rem 0 0 1rem;
 }
+
 .search-form input {
-    border :2px solid lightgrey;
+    border: 2px solid lightgrey;
     padding: 14px 32px;
     margin: -1rem;
 }
-.search-form input::placeholder{
+
+.search-form input::placeholder {
     font-size: 1.2rem;
 }
+
 .search-form button {
     background-color: #0065fc;
-    color:white;
+    color: white;
     font-weight: bold;
-    border-radius: 0 1rem 1rem  0;
+    border-radius: 0 1rem 1rem 0;
     border: none;
     cursor: pointer;
     opacity: 1;
-    }
-
-.search-form button:hover {
-opacity: 1;
 }
 
-/*Filters*/ 
+.search-form button:hover {
+    opacity: 1;
+}
+
+/*Filters*/
 .Filter-list {
     display: flex;
     align-items: center;
@@ -106,72 +112,102 @@ opacity: 1;
     margin-top: 1rem;
     margin-left: 0.5rem;
 }
+
 .Filter {
     border: 2px solid lightgray;
     border-radius: 2rem;
     display: flex;
-    align-items: center ;
+    align-items: center;
     transition: all 100ms;
     margin-left: 0.5rem;
 }
 
 .Filter .fas {
-color: blue;
-background-color: lightblue;
-padding: 1rem; 
-border-radius: 50%;
-margin: -2px;
-width: 3rem;
-height: 3rem;
-display: flex;
-align-items: center;
-justify-content: center;
+    color: blue;
+    background-color: lightblue;
+    padding: 1rem;
+    border-radius: 50%;
+    margin: -2px;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.Filter span{
+
+.Filter span {
     font-weight: bold;
     padding: 0 1rem;
- }
- .Filter:hover{
-     background-color: #0065fc;
-     transform: scale(1.02);
- }  
+}
+
+.Filter:hover {
+    background-color: #0065fc;
+    transform: scale(1.02);
+}
+
 /*RESULTS MESSAGE */
 .results-message {
     display: flex;
-    align-items: center;   
+    align-items: center;
 }
+
 .results-message .fas {
-color: blue;
-width: 2rem;
-height: 2rem;
-border: 1px solid darkgrey;
-border-radius: 50%;
-display: flex;
-align-items: center;
-justify-content: center;
+    color: blue;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid darkgrey;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*HÉBERGEMENTS À MARSEILLE*/
 
-body{
+body {
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
 }
 
-.list-hebergements {
-    border: 1px solid #f2f2f2;
-    border-radius: 1rem;
-    width: 66%;
-    flex-direction: column;
-    padding: 40px 40px;
-    margin-left: 1rem; 
-    background-color: #f2f2f2;
-    display: flex;
-}
-.list-hebergements div{
+.container {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+.list-herbergement-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.list-hebergements {
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    padding: 15px;
+    width: 60%;
+}
+
+.list-hebergements h3 {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: large;
+}
+
+.popular {
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    padding: 2%;
+    width: 25%;
+}
+
+.list-popular-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .cards-hebergements {
@@ -189,30 +225,15 @@ body{
 }
 
 
-.cards-hebergements img{
+.cards-hebergements img {
     border-radius: 1rem 1rem 0 0;
     width: 100%;
     height: 50%;
 }
-    
-.popular{
-    border: 1px solid #f2f2f2;
-    border-radius: 1rem;
-    padding: 40px 40px;
-    width: 30%;
-    background-color: #f2f2f2;
-    display: flex;
-    flex-direction: column;
-    float: right;
-}
-.popular div{
-    display: flex;
-    flex-wrap: wrap;
-}
 .blue {
     color: blue;
 }
+
 .grey {
-    color:darkgrey;
+    color: darkgrey;
 }
-/*Activités à Marseille*/

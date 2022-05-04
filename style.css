@@ -87,7 +87,9 @@ nav a:hover {
 }
 
 .search-form input::placeholder {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: black;
 }
 
 .search-form button {
@@ -124,7 +126,7 @@ nav a:hover {
 
 .Filter .fas {
     color: blue;
-    background-color: lightblue;
+    background-color: #DFECFF;
     padding: 1rem;
     border-radius: 50%;
     margin: -2px;
@@ -176,6 +178,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 5%;
+    margin-right: 5rem;
 }
 
 .list-herbergement-container {
@@ -189,7 +192,8 @@ body {
     background-color: #F2F2F2;
     border-radius: 15px;
     padding: 15px;
-    width: 60%;
+    width: 66%;
+    height: auto;
 }
 
 .list-hebergements h3 {
@@ -197,43 +201,103 @@ body {
     font-weight: 700;
     font-size: large;
 }
+.cards-hebergements img {
+    border-radius: 1rem 1rem 0 0;
+    width: 100%;
+    height: 8rem;
+}
+.cards-hebergements {
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    width: 30%;
+    padding: 0.5rem;
+    font-weight: bold;
+    background-color: white;
+}
 
 .popular {
     background-color: #F2F2F2;
     border-radius: 15px;
-    padding: 2%;
-    width: 25%;
+    padding: 15px;
+    width: 30%;
 }
 
 .list-popular-container {
     display: flex;
     flex-direction: column;
+    width: 90%;
 }
-
-.cards-hebergements {
-    border: 1px solid #f2f2f2;
+.cards-popular{
+    border: 1px solid #F2F2F2;
     border-radius: 1rem;
     margin-bottom: 1rem;
     width: 30%;
-    height: 30%;
-    display: inline-block;
     padding: 0.5rem;
-    margin-left: 1rem;
-    vertical-align: top;
     font-weight: bold;
     background-color: white;
 }
 
-
-.cards-hebergements img {
-    border-radius: 1rem 1rem 0 0;
-    width: 100%;
-    height: 50%;
+.div-popular {
+    flex-direction: row;
+    margin: 5px;
 }
+
+.list-popular-container .cards-popular{
+    width: 100%;
+    display: flex;
+}
+.cards-popular img {
+    border-radius: 1rem 0rem 0 1rem;
+    width: 50%;
+    height: 8rem;
+    display: flex;
+}
+
 .blue {
     color: blue;
 }
 
 .grey {
     color: darkgrey;
+}
+.activites{
+    display: flex;
+    border-radius: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+    margin-right: 5rem;
+}
+.list-activite-container {
+    
+}
+
+.bloc1 {
+    border-bottom: black;
+    border-radius: 1rem;
+    background-color: #F2F2F2;
+    width: 30%;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+.bloc2 {
+    border-bottom: black;
+    border-radius: 1rem;
+    background-color: #F2F2F2;
+    width: 30%;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.activites img{
+    width: 100%;
+    height: 50%;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.activites h3{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: large;
 }

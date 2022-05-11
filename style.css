@@ -272,6 +272,7 @@ body {
 .img-grp{
     border-radius: 1rem;
     flex-direction: column;
+    width: 23%;
 }
 
 .Grandes-icones {
@@ -280,6 +281,7 @@ body {
     border: 1px solid black;
     box-shadow: black;
     border: 1 px solid transparent;
+    width: 23%;
 }
 
 .Petites-icones {

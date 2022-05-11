@@ -148,7 +148,7 @@ nav a:hover {
 }
 
 .results-message .fas {
-    color: blue;
+    color: #0065fc;
     width: 2rem;
     height: 2rem;
     border: 1px solid darkgrey;
@@ -205,9 +205,9 @@ body {
     border-radius: 1rem;
     margin-bottom: 1rem;
     width: 30%;
-    padding: 0.5rem;
     font-weight: bold;
     background-color: white;
+    padding: 0.5rem;
 }
 
 .popular {
@@ -234,9 +234,9 @@ body {
     border-radius: 1rem;
     margin-bottom: 1rem;
     width: 30%;
-    padding: 0.5rem;
     font-weight: bold;
     background-color: white;
+    padding: 0.5rem;
 }
 
 .div-popular {
@@ -262,34 +262,34 @@ body {
 .grey {
     color: darkgrey;
 }
+
+/*Activités à Marseille*/
+
 .activites{
     display: flex;
     border-radius: 1rem;
+    box-shadow: black;
 }
-
-.img-large {
+.img-grp{
     border-radius: 1rem;
-    background-color: #F2F2F2;
-    flex-wrap: wrap;
-    margin-left: 2rem;
-    margin-bottom: 1rem;
-    border: 1px solid black;
-    display: flex;
+    flex-direction: column;
 }
 
-.img-small {
+.Grandes-icones {
+    border-radius: 1rem;
+    flex-wrap: wrap;
+}
+
+.Petites-icones {
     border-bottom: black;
     border-radius: 1rem;
-    background-color: #F2F2F2;
     flex-wrap: wrap;
-    margin-left: 2rem;
     margin-bottom : 1rem;
-    display: flex;
 }
 
 .activites img{
     height: 80%;
-    width: 50%;
+    width: 23%;
     border-radius: 1rem 1rem 0rem 0rem;
 }
 
@@ -298,3 +298,18 @@ body {
     font-weight: 700;
     font-size: large;
 }
+ /*FOOTER*/
+  
+ footer {
+    background-color: #F2F2F2;
+    margin-top: 40px;
+    padding-top: #f2f2f2;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .bloc_footer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }

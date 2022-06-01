@@ -25,15 +25,16 @@ nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    margin-top: -15px;
 }
 
 nav a {
     padding: 2rem;
-    border-top: 3px solid transparent;
+    border-top: 3px solid rgba(0, 101, 252, 0);
 }
 
 nav a:hover {
-    border-top: 3px solid #0065fc;
+    border-top-color:  rgba(0, 101, 252, 1);
 }
 
 #logo {
@@ -51,11 +52,6 @@ nav a:hover {
 
 .sub-nav a {
     flex-basis: 50%;
-}
-
-.sub-nav a:hover {
-    border-top: 3px solid transparent;
-    color: #0065fc
 }
 
 /*search-form */
@@ -286,6 +282,13 @@ body {
     margin: 1%;
 }
 
+.activités-card-grandes h4{
+    padding-left: 0.5rem;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: large;
+}
+
 .activités-card h4{
     padding-left: 0.5rem;
     font-family: 'Raleway';
@@ -297,13 +300,15 @@ body {
     display: block;
     width: 100%;
     height: 50%;
+    box-shadow: 0px 0px 10px rgba(41,41,41);
+    border-radius: 1rem;
 }
 
 .activités-card-image{
     object-fit: cover;
     width: 100%;
     height: 100%;
-    border-radius: 1rem;
+    border-radius: 1rem 1rem 0 0;
 } 
 
 /*FOOTER*/

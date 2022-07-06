@@ -563,3 +563,14 @@ footer {
         text-align: flex-start;
     }
 }
+@media only screen and (max-width: 3000px){
+    .activités-card-subtitle {
+        font-family: 'Raleway';
+        font-weight: 700;
+        margin-left: 3px;
+        margin-top: 5px;
+    }
+    .activités-card-image-container-grande .activités-card-subtitle{
+       margin-top: 10px ;
+    }
+}

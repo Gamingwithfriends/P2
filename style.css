@@ -4,8 +4,6 @@
     --bleu: #0065FC --darkgrey:#a9a9a9 --lightgrey:#F2F2F2 --lightblue:#DEEBFF
 }
 
-
-/*wildcart */
 * {
     box-sizing: border-box;
     font-family: "Raleway", "sans-serif";
@@ -485,6 +483,7 @@ footer {
         border-radius: 15px;
         padding: 15px;
         width: 100%;
+        height: 100%;
         margin-top: 15px;
     }
     .list-popular-container {
@@ -492,49 +491,53 @@ footer {
         flex-direction: column;
         margin-right: 2rem;
     }
+    .cards-popular {
+        border: 1px solid #F2F2F2;
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+        height: 50vh;
+        background-color: white;
+        padding: 0.5rem;
+    }
     .cards-popular img {
         border-radius: 1rem 0rem 0 1rem;
-        width: 50%;
-        height: 50vh;
+        width: 60%;
+        height: 100%;
     } 
     /*Activite 768px*/
     .activites-container {
         display: flex;
         flex-direction: column;
-        width: 100%;
-        height: 1000px;
+        height: 100%;
     }
     .activités-card-grandes {
-        width: 100%;
-        height: 20%;
+        width: 80vh;
+        height: 30vh;
         border-radius: 15px;
         box-shadow: 0px 0px 10px rgba(41,41,41);
     }
     .activités-card-image-container{
-        width: 100%;
-        height: 50%;
+        width: 80vh;
+        height: 30vh;
         border-radius: 15px;
         box-shadow: 0px 0px 10px rgba(41,41,41);
     }
     .activités-card-image-container-grande{
-        width: 100%;
-        height: 50%;
+        width: 80vh;
+        height: 30vh;
         border-radius: 15px;
         box-shadow: 0px 0px 10px rgba(41,41,41);
     }
     .activités-card-image{
-        width: 100%;
-        height: 50%;
+        height: 80%;
         border-radius: 1rem 1rem 0 0;box-shadow: 0px 0px 10px rgba(41,41,41);
     } 
     .activités-card-image-petite{
-        width: 100%;
-        height: 50%;
+        height: 80%;
         border-radius: 1rem 1rem 0 0;
     } 
     .activités-card-image-petite-petite{
-        width: 100%;
-        height: 50%;
+        height: 80%;
         border-radius: 1rem 1rem 0 0;
     } 
     .activités-card-subtitle {
